@@ -13,3 +13,4 @@ class AllLookupsOut(BaseModel):
     tank_statuses: list[str]
     measurement_methods: list[str]
     plants: list[str]
+    loss_reasons: list[str]

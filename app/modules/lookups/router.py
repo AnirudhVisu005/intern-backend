@@ -16,4 +16,5 @@ def get_all_lookups(db: Session = Depends(get_db)):
         tank_statuses=crud.get_lookups_by_category(db, "tank_status"),
         measurement_methods=crud.get_lookups_by_category(db, "measurement_method"),
         plants=crud.get_lookups_by_category(db, "plant"),
+        loss_reasons=crud.get_lookups_by_category(db, "loss_reason"),
     )

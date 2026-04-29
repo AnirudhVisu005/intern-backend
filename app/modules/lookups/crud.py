@@ -14,7 +14,8 @@ def seed_lookups_if_empty(db: Session) -> None:
         "capacity_unit": ["Liters", "Kg", "m³"],
         "tank_status": ["Active", "Inactive", "Maintenance"],
         "measurement_method": ["Manual Dip", "Sensor", "Flow Meter", "Visual Gauge"],
-        "plant": ["Main Plant", "North Facility", "South Hub"]
+        "plant": ["Main Plant", "North Facility", "South Hub"],
+        "loss_reason": ["Leakage", "Measurement Error", "Evaporation"],
     }
     
     for cat, values in defaults.items():
